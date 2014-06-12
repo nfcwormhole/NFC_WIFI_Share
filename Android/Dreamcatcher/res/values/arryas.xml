@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="wifi_select_safe_array">
+        <item>No Password</item>
+        <item>WPA/WPA2</item>
+        <item>WEP</item>
+    </string-array>
+
+</resources>

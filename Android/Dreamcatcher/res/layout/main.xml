@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/select_title"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_selected"
+                    android:onClick="wifiWriteAction"
+                    android:padding="5.0dip" >
+
+                    <ImageView
+                        android:layout_width="75.0dip"
+                        android:layout_height="75.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/main_wifi_write_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/main_wifi_write_txt"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_selected"
+                    android:onClick="urlWriteAction"
+                    android:padding="5.0dip" >
+
+                    <ImageView
+                        android:layout_width="75.0dip"
+                        android:layout_height="75.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/main_url_write_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/main_wifi_url_txt"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
